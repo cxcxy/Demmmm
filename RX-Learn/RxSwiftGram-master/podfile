@@ -1,0 +1,13 @@
+use_frameworks!
+
+pod 'Moya'
+pod 'Moya-ObjectMapper/RxSwift', '~> 1.1.2'
+pod 'RxSwift',    '~> 2.0'
+pod 'RxCocoa',    '~> 2.0'
+pod 'RxBlocking', '~> 2.0'
+pod 'Moya/RxSwift'
+pod 'RxWebKit'
+pod 'NSObject+Rx'
+
+pod 'SDWebImage', '<= 3.7.3'
+pod "FMMosaicLayout"

@@ -1,0 +1,6 @@
+framework module Pods_WOW_RxSwift {
+  umbrella header "Pods-WOW-RxSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

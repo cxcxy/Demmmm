@@ -1,0 +1,4 @@
+github "devxoul/Then"
+github "ReactiveX/RxSwift" ~> 3.0
+github "radex/SwiftyUserDefaults"
+github "RxSwiftCommunity/RxDataSources" ~> 1.0

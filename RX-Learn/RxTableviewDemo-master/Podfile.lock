@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.5.0)
+  - ObjectMapper (2.2.8)
+  - PullToRefreshSwift (3.0.3)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxDataSources (1.0.4):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.6.1)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ObjectMapper
+  - PullToRefreshSwift
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
+  PullToRefreshSwift: 0743b818072bfd7c9464addc2d1b987b131057ca
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxDataSources: b3389acc5fe2eefb8fcd81a2b76a876ad08bc82a
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: 77a84153ed540a291762c5c5f78d76e3ba405cc6
+
+COCOAPODS: 1.2.0.beta.3
