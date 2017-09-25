@@ -1,0 +1,6 @@
+target "NoNetWorking" do
+use_frameworks!
+platform :ios, '8.0'
+	
+	pod 'DZNEmptyDataSet'
+end

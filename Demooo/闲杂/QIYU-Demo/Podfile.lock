@@ -1,0 +1,18 @@
+PODS:
+  - ObjectMapper (2.2.6)
+  - QIYU_iOS_SDK (3.5.5)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - ObjectMapper
+  - QIYU_iOS_SDK
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ObjectMapper: '042708195cc46c20871cbcbec0453826398273fd'
+  QIYU_iOS_SDK: bb2fe96f9e7b3f2b92ea4d0e0c19af43879c0086
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: ac8cf993794ac961601ce15f25c7b4a844f95621
+
+COCOAPODS: 1.2.0.beta.3

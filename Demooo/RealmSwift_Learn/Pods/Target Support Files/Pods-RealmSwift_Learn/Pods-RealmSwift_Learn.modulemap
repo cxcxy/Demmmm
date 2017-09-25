@@ -1,0 +1,6 @@
+framework module Pods_RealmSwift_Learn {
+  umbrella header "Pods-RealmSwift_Learn-umbrella.h"
+
+  export *
+  module * { export * }
+}

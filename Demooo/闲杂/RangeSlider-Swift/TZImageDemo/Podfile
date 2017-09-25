@@ -1,0 +1,8 @@
+ 
+target "TZImageDemo" do
+use_frameworks!
+platform :ios, '8.0'
+
+ 	pod 'TZImagePickerController', :git => 'https://github.com/cxcxy/TZImagePickerController.git'
+ 	 pod 'IQKeyboardManagerSwift'
+end

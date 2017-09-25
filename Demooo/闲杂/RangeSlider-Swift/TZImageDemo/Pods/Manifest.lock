@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManagerSwift (4.0.9)
+  - TZImagePickerController (1.7.9)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - TZImagePickerController (from `https://github.com/cxcxy/TZImagePickerController.git`)
+
+EXTERNAL SOURCES:
+  TZImagePickerController:
+    :git: https://github.com/cxcxy/TZImagePickerController.git
+
+CHECKOUT OPTIONS:
+  TZImagePickerController:
+    :commit: b487a0445709eca09dd6dffb9315fd99b1db64da
+    :git: https://github.com/cxcxy/TZImagePickerController.git
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  TZImagePickerController: 0a8ff228d287ebdd7d485e8c42a2a932894f1fba
+
+PODFILE CHECKSUM: 80d1d93eca84ca4fbc7c23b2dba80030ae9ddbd7
+
+COCOAPODS: 1.2.0.beta.3

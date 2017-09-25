@@ -1,0 +1,6 @@
+framework module Pods_OCDelloc {
+  umbrella header "Pods-OCDelloc-umbrella.h"
+
+  export *
+  module * { export * }
+}

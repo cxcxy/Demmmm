@@ -1,0 +1,6 @@
+framework module CXSDK {
+  umbrella header "CXSDK.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_NoNetWorking {
+  umbrella header "Pods-NoNetWorking-umbrella.h"
+
+  export *
+  module * { export * }
+}

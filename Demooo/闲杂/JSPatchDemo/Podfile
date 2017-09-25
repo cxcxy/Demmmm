@@ -1,0 +1,7 @@
+target "JSPatchDemo" do
+
+platform :ios, '8.0'
+	
+	pod 'JSPatchPlatform'
+	#pod 'DZNEmptyDataSet'
+end

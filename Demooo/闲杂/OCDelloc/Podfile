@@ -1,0 +1,6 @@
+target "OCDelloc" do
+use_frameworks!
+platform :ios, '8.0'
+	pod 'DZNEmptyDataSet'
+	pod 'MLeaksFinder'
+end

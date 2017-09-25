@@ -1,0 +1,20 @@
+PODS:
+  - HidingNavigationBar (1.0.0)
+  - SnapKit (3.2.0)
+  - VTMagic (1.2.4):
+    - VTMagic/Core (= 1.2.4)
+  - VTMagic/Core (1.2.4)
+
+DEPENDENCIES:
+  - HidingNavigationBar
+  - SnapKit
+  - VTMagic
+
+SPEC CHECKSUMS:
+  HidingNavigationBar: 170dd21df8e89c465c01f047d4306778d1ce304c
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  VTMagic: b49e5f456dbcbfd9a3588ba92417233a105bc193
+
+PODFILE CHECKSUM: 9c9716a4abd0c0a10f9ee51154ec4dde30bed283
+
+COCOAPODS: 1.2.0.beta.3

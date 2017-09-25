@@ -1,0 +1,6 @@
+target "JSPatchDemo-Swift" do
+use_frameworks!
+platform :ios, '8.0'
+	
+	pod 'JSPatchPlatform'
+end

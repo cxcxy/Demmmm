@@ -1,0 +1,13 @@
+ 
+target "PhotoTweaks-Demo" do
+use_frameworks!
+
+platform :ios, '8.0'
+
+# 	    pod 'TZImagePickerController', :git => 'https://github.com/cxcxy/TZImagePickerController.git'
+	pod "VTMagic"
+	pod 'SnapKit'
+	pod 'HidingNavigationBar'
+#    pod 'TZImagePickerController'
+
+end

@@ -1,0 +1,16 @@
+PODS:
+  - SwipeViewController (0.1.4)
+
+DEPENDENCIES:
+  - SwipeViewController (from `../`)
+
+EXTERNAL SOURCES:
+  SwipeViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwipeViewController: 2e4f554f52c5918a701c4815b78c2a178fe88814
+
+PODFILE CHECKSUM: 9d57d1b32d355505895f79c4d84f31fc99f82791
+
+COCOAPODS: 1.0.0

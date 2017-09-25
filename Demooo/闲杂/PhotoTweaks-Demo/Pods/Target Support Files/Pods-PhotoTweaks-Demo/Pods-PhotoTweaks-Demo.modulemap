@@ -1,0 +1,6 @@
+framework module Pods_PhotoTweaks_Demo {
+  umbrella header "Pods-PhotoTweaks-Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

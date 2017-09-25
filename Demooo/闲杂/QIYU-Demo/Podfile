@@ -1,0 +1,11 @@
+target "QIYU-Demo" do
+use_frameworks!
+platform :ios, '8.0'
+
+	pod 'QIYU_iOS_SDK'
+	pod 'ObjectMapper'
+	pod 'SwiftyJSON'
+#	pod 'PhotoTweaks'
+	#pod 'TZImagePickerController', :git => 'https://github.com/cxcxy/TZImagePickerController.git'
+  	pod 'IQKeyboardManagerSwift'
+end

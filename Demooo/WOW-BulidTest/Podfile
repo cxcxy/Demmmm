@@ -1,0 +1,7 @@
+target "WOW-BulidTest" do
+use_frameworks!
+platform :ios, '8.0'
+	pod 'Alamofire', '~> 4.4'
+	pod 'SwiftyUserDefaults'
+	pod 'SwiftyJSON'
+end
