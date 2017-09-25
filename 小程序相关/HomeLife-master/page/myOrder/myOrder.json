@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTextStyle": "wirte",
+    "navigationBarTitleText": "我的订单",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+}

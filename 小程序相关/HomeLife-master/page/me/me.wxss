@@ -1,0 +1,15 @@
+/* page/me/me.wxss */
+page{
+    background: #eeeeee;
+}
+view{
+    background: #fff;
+}
+.header{
+    font-size:14px;
+    text-align: center;
+}
+.imgs{
+    width:750rpx;
+    height:280rpx;
+}

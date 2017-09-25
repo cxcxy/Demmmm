@@ -1,0 +1,67 @@
+{
+  "debug": true, 
+  "window": {
+    "navigationBarTextStyle": "black", 
+    "navigationBarBackgroundColor": "#f7f7f7", 
+    "navigationBarTitleText": "\u2014\u2014  \u7cbe\u9009  \u2014\u2014", 
+    "backgroundColor": "#eeeeee", 
+    "enablePullDownRefresh": true, 
+    "backgroundTextStyle": "dark"
+  }, 
+  "pages": [
+    "page/me/me",
+    "page/cars/cars",
+    "page/index/index",
+    "page/pay/pay",
+    "page/login/login",
+    "page/goodsList/goodsList",
+    "page/myOrder/myOrder",
+    "page/address/addressList",
+    "page/address/edit",
+    "page/joinCar/joinCar",
+    "page/detail/detail"
+  ], 
+  "tabBar": {
+    "color": "#7F8389", 
+    "selectedColor": "#000", 
+    "borderStyle": "black", 
+    "list": [{
+            "pagePath": "page/index/index",
+            "text": "精选",
+            "iconPath": "resources/jingxuan.png",
+            "selectedIconPath": "resources/xin.jpg"
+        },
+        {
+            "pagePath": "page/goodsList/goodsList",
+            "text": "商城",
+            "iconPath": "resources/shangcheng.png",
+            "selectedIconPath": "resources/xin.jpg"
+        },
+        {
+            "pagePath": "page/cars/cars",
+            "text": "购物车",
+            "iconPath": "resources/gouwuche.png",
+            "selectedIconPath": "resources/xin.jpg"
+        },
+        {
+            "pagePath": "page/index/index",
+            "text": "发现",
+            "iconPath": "resources/faxian.png",
+            "selectedIconPath": "resources/xin.jpg"
+        },
+        {
+            "pagePath": "page/me/me",
+            "text": "我的",
+            "iconPath": "resources/me.png",
+            "selectedIconPath": "resources/xin.jpg"
+        }
+    ], 
+    "backgroundColor": "#F7F7FA"
+  }, 
+  "networkTimeout": {
+    "connectSocket": "", 
+    "request": "", 
+    "downloadFile": "", 
+    "uploadFile": ""
+  }
+}

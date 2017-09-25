@@ -1,0 +1,18 @@
+/* pages/master/readyOrder/readyOrder.wxss */
+
+.section{ padding: 30rpx 0rpx 30rpx 10rpx;overflow: hidden; box-sizing: border-box;}
+.section .icon{ width: 90rpx; float: left; text-align: center}
+.section .icon image{ width: 45rpx; height: 45rpx;}
+
+
+
+
+.section picker{ display: inline-block; width: 50%;}
+.section picker .picker{ color: #333}
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.user-phone{
+    width: 700rpx;
+    border-bottom: 1px solid #eeeeee;
+    margin: 0 auto;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle; 
+}
+image{
+    width: 65rpx;
+    height:65rpx;
+    margin: 10px 0;
+}
+input{
+  height: 65rpx;
+  margin: 10px 0;
+  padding-left:10px;
+  font-size: 16px;
+}
+.btn{
+  height:65rpx;
+  padding: 5px 10px;
+  margin:10px 0 10px 10rpx;
+  background: #fff;
+  line-height: normal;
+  display: inline-block;
+  border-radius: 0;
+  border: 1px solid #000;
+}
+
+.loginBtn{
+  width: 700rpx;
+  margin-top:50rpx;
+  color:#fff;
+  background: #000;
+}
+.carts-item{
+  height:80rpx;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+.carts-item image{
+  width: 25px;
+  height:25px;
+  margin:16rpx 0;
+}

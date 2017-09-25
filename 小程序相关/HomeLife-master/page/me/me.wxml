@@ -1,0 +1,12 @@
+<!--page/me/me.wxml-->
+<view class="header">
+    <navigator url="/page/login/login" hover-class="none">
+        <image class="imgs" src="{{imgSrc}}"></image>
+        <text style="padding:5px 0;display:block;color:#323232;">立即登录</text>
+    </navigator>
+</view>
+<view style="margin-top:10px;">
+    <navigator url="../myOrder/myOrder"><view style="padding:10px 0 10px 10px;">我的订单</view></navigator>
+    <image src=""></image>
+    <navigator url="../address/addressList"><view style="padding:10px 0 10px 10px;">地址管理</view></navigator>
+</view>

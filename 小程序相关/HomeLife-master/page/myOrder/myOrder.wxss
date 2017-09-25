@@ -1,0 +1,14 @@
+page{width: 100%;}
+ .swiper-tab{width: 100%; border-bottom: 2rpx solid #d6d6d6; text-align: center;  line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 30rpx;  display: inline-block;  width: 25%;  color: #d6d6d6; }  
+.on{ color: #3f3f3f;font-weight: bold;border-bottom: 5rpx solid #000;}  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; background: #eeeeee;font-size:28rpx;}  
+.swiper-box view{ background: #fff;  }
+.header{width: 100%;height:70rpx;line-height: 70rpx;border-bottom:2.34rpx solid #d6d6d6;margin-top:35rpx;}
+.detail{margin-left:30rpx;}
+.anarchy{position: absolute;right:30rpx;}
+.goods{float:left}
+.section{height:245rpx; border-bottom: 1rpx solid #d6d6d6;}
+.num{text-align:right;font-size:13px;padding:8px 0;border-bottom: 1px solid #dcdcdc}
+.section image{width: 140rpx; height:180rpx; margin:35rpx 0 0 35rpx;}
+button{ display:inline-block; width: 200rpx;height:80rpx;font-size:35rpx;background: #fff;padding:7rpx;margin:20rpx 10rpx;}

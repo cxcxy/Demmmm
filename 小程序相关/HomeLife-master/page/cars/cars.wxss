@@ -1,0 +1,69 @@
+page{
+    display: flex;
+    flex-direction: column
+}
+.my-sel{
+    width: 750rpx;
+    height: 85rpx;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-size:36rpx;
+}
+.my-pic{
+    width: 85rpx;
+    height:110rpx;
+}
+.bordernone{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+}
+.my-bnt{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+.int{
+    width: 50rpx;
+}
+.bnt{
+    display: block;
+    width: 34rpx;
+    height:34rpx;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 34rpx;
+}
+.float{
+    width: 750rpx;
+    position: fixed;
+    bottom: 0;
+    border-top:2px solid #e5e5e5;
+}
+.my-rightbox{
+    height:85rpx; 
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+.my-count{
+    width: 400rpx;
+    line-height: 85rpx;
+    font-size:36rpx;
+    margin-right:100rpx;
+    padding-left:50rpx;
+}
+.my-bnts{
+    margin:7rpx 0;
+    width: 200rpx;
+    height:72rpx;
+    background: #fe5337;
+    line-height: 72rpx;
+    text-align: center;
+    color:#fff;
+    font-size: 28rpx;
+    font-weight: bold;
+}

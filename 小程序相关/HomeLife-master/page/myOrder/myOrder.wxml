@@ -1,0 +1,78 @@
+ 
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">待发货</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待签收</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">退款/售后</view>
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">已完成</view>  
+</view>  
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 40}}px" bindchange="bindChange">
+    <swiper-item wx:for="{{ORDER_LIST}}" wx:for-item="order">  
+        <view class="header">
+            <text class="detail">订单编号：{{order.ORDER_NO}}</text>
+            <text class="anarchy">
+            {{order.ORDER_STATUS==8?'已完成':''}}
+            {{order.ORDER_STATUS==5?'退款/退货':''}}
+            {{order.ORDER_STATUS==4?'待签收':''}}
+            {{order.ORDER_STATUS==3?'待发货':''}}
+            </text>
+        </view>
+        <view class="section" wx:for="{{order.ORDER_ITEM}}" wx:for-item="orderItem">
+            <view class="goods"><image src="{{orderItem.GOODS_IMG_URL}}"></image></view>
+            <view class="">
+                <text style="color:red;">{{order.GOODS_TYPE_NAME}}</text>
+                <text>￥{{orderItem.GOODS_PRICE}}</text>
+            </view>
+            <view class="">
+                <text>{{orderItem.GOODS_NAME}}</text>
+                <text>X{{orderItem.GOODS_NUM}}</text>
+            </view>
+            <view class="">
+                <text>颜色：{{orderItem.GOODS_COLOR}}</text>
+                <text>尺码：{{orderItem.GOODS_SIZE}}</text>
+            </view>
+        </view>
+        <view class="num" style="text-align:right;font-size:13px;">
+            <text>共{{order.ITEM_COUNT}}件</text>
+            <text>应付总额：￥{{order.ORDER_NEED_PAY_PRICE}}（含运费￥{{order.DELIVER_FEE}}）</text>
+        </view>
+        <view class="footer">
+            <button class="btn1">申请退款</button>
+            <button class="btn2">联系客服</button>
+        </view> 
+    </swiper-item>    
+    <swiper-item wx:for="{{ORDER_LIST}}" wx:for-item="order">  
+        <view class="header">
+            <text class="detail">订单编号：{{order.ORDER_NO}}</text>
+            <text class="anarchy">
+            {{order.ORDER_STATUS==8?'已完成':''}}
+            {{order.ORDER_STATUS==5?'退款/退货':''}}
+            {{order.ORDER_STATUS==4?'待签收':''}}
+            {{order.ORDER_STATUS==3?'待发货':''}}
+            </text>
+        </view>
+        <view class="section" wx:for="{{order.ORDER_ITEM}}" wx:for-item="orderItem">
+            <view class="goods"><image src="{{orderItem.GOODS_IMG_URL}}"></image></view>
+            <view class="">
+                <text style="color:red;">{{order.GOODS_TYPE_NAME}}</text>
+                <text>￥{{orderItem.GOODS_PRICE}}</text>
+            </view>
+            <view class="">
+                <text>{{orderItem.GOODS_NAME}}</text>
+                <text>X{{orderItem.GOODS_NUM}}</text>
+            </view>
+            <view class="">
+                <text>颜色：{{orderItem.GOODS_COLOR}}</text>
+                <text>尺码：{{orderItem.GOODS_SIZE}}</text>
+            </view>
+        </view>
+        <view class="num" style="text-align:right;font-size:13px;">
+            <text>共{{order.ITEM_COUNT}}件</text>
+            <text>应付总额：￥{{order.ORDER_NEED_PAY_PRICE}}（含运费￥{{order.DELIVER_FEE}}）</text>
+        </view>
+        <view class="footer">
+            <button class="btn1">申请退款</button>
+            <button class="btn2">联系客服</button>
+        </view> 
+    </swiper-item>  
+</swiper>  

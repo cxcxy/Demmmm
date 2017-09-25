@@ -1,0 +1,12 @@
+/* page/index/index.wxss */
+page,swiper{
+    width: 750rpx;
+    height: 1000rpx;
+}
+.wx-swiper-item{
+    display: block;
+    width: 600rpx;
+    height: 1060rpx;
+    margin: 80rpx auto 0;
+    border-radius: 10px;
+}

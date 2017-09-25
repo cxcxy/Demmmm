@@ -1,0 +1,7 @@
+{
+      "navigationBarTextStyle": "write",
+      "navigationBarTitleText": "商城",
+      "backgroundTextStyle": "dark",
+      "enablePullDownRefresh": true,
+      "navigationBarBackgroundColor": "red"
+}

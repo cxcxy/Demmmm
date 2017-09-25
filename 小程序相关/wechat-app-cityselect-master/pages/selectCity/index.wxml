@@ -1,0 +1,42 @@
+<view class="page">
+
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="page_top">
+
+
+            <view class="section">
+                <view class="icon"><image src="/images/ft-xzcsd.png"></image></view>
+                <view class="from_input fl" data-mold="city" bindtap="risePicker">
+                    {{cityText}}
+                </view>
+            </view>
+
+        </view>
+
+    </form>
+
+    <view hidden="{{isCity}}" class="selector">
+        <view class="inner_box">
+            <view class="header_box">
+                <view class="item l" data-act="cancel" data-mold="city" bindtap="ideChoice">取消</view>
+                <view class="item c">请选择</view>
+                <view class="item r" data-act="confirm" data-mold="city" bindtap="ideChoice">确定</view>
+            </view>
+
+            <picker-view class="picker_box" indicator-class="selected" value="{{cityValue}}" bindchange="cityChange">
+                <picker-view-column>
+                    <view wx:for="{{provinces}}">{{item}}</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view wx:for="{{citys}}">{{item}}</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view wx:for="{{countys}}" >{{item}}</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+        <view class="layer"></view>
+    </view>
+
+</view>
+

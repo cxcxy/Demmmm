@@ -1,0 +1,37 @@
+<!--page/goodsList/goodsList.wxml-->
+<view class="float-action" bindtap="ballClickEvent" style="opacity: {{ballOpacity}};bottom:{{ballBottom}}px;left:{{ballRight}}px;" bindtouchmove="ballMoveEvent">
+    <text style="width:100%;display:block;text-align:center;line-height:50px;color:#fff;">分类</text>
+</view>
+
+<view class="slide-mask" style="display:{{maskDisplay}}" bindtap="slideCloseEvent"></view>
+<view class="slide-menu" style="right: {{slideRight}}px;width: {{slideWidth}}px;height:{{slideHeight}}px;" animation="{{slideAnimation}}">
+  <!--<icon type="cancel" size="30" class="close-btn" color="#000" bindtap="slideCloseEvent" />-->
+  <scroll-view scroll-y="true" style="height:100%;width:100%">
+          <!-- 侧边栏内容区域 start-->
+
+          <view wx:for="{{goods_list}}" wx:key="item">
+             <text style="margin-top:5rpx;padding-left:20rpx;line-height:100rpx;height:100rpx;display:block;background:#353535;font-size:14px;color:#fff;border-radius:0;">MUM-IN-CHIEF {{item.GOODS_TYPE_NAME}}</text>  
+          </view>
+          <text style="margin-top:5rpx;padding-left:20rpx;line-height:100rpx;height:100rpx;display:block;background:#353535;font-size:14px;color:#fff;border-radius:0;">MUM-IN-CHIEF 全部品牌</text>
+          <!-- 侧边栏内容区域 end-->
+  </scroll-view>
+</view>
+
+<!-- 主体区域 start -->
+<scroll-view wx:if="{{themeId==0}}" scroll-y="true" style="height:100%;width:100%;display:{{pageShow}}" bindscrolltolower="loadingMoreEvent">
+<view class="goods_list">
+     <view class="list" wx:for="{{goods}}" wx:key="item">
+     <navigator url="../detail/detail?GOODS_ID={{item.GOODS_ID}}">
+        <image src="{{item.GOODS_IMG_URL}}"></image>
+        <view style="margin:10rpx 20rpx 0;height:60rpx;">
+            <text>{{item.GOODS_NAME}}</text>
+        </view>
+        <view style="width:100%;padding-bottom:10rpx;">
+            <text class="red" style="padding:10rpx 20rpx;">￥{{item.GOODS_PRICE}}</text>
+            <text style="float:right;color:#afafaf;padding-right:10rpx;">月销{{item.MONTH_SALE}}件</text>
+        </view>
+        </navigator>
+     </view>
+</view>
+</scroll-view>
+<!-- 主体区域 end -->

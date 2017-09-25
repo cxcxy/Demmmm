@@ -1,0 +1,24 @@
+<view class="container">
+    <form bindsubmit="submitLogin">
+        <view class="user-phone" style="margin-top:20rpx;">
+            <image src="/resources/two_men.png"></image>
+            <input type="number" name="telephone" maxlength="11" placeholder="请输入手机号" auto-focus/>
+        </view>
+        <view class="user-phone">
+            <image src="/resources/suo.png"></image>
+            <input type="number" name="code" maxlength="6" placeholder="验证码"/>
+            <button class="btn" data-type="code" form-type="submit" bindtap="sendCode">{{sendCodeText}}</button>
+        </view>
+        <view>
+            <button class="loginBtn" form-type="submit" disabled="{{dis}}" size="default">登录</button>
+        </view>
+        <view wx:for="{{carts}}" class="carts-item" style="width:700rpx;margin:30rpx auto;" bindtap="bindViewTap">
+            <image wx:if="{{item.selected}}" data-index="{{index}}" bindtap="bindCheckbox" src="/resources/no.png"></image>
+            <image wx:else src="/resources/ok.png" data-index="{{index}}" bindtap="bindCheckbox"></image>
+            <text style="font-size:14px;line-height:80rpx;margin-left:10px;">快闪服务协议</text>
+        </view>     
+    </form>
+</view>
+
+
+

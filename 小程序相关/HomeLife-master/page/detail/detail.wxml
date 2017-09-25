@@ -1,0 +1,21 @@
+<view class="container">
+    <view class="post-title">
+        <image class="post-title-img" src="{{date.GOODS_IMG_URL}}"></image>
+    </view>
+    <view class="post-price-distribution-sale">
+        <text class="post-price" style="color:red">￥{{date.GOODS_PRICE}}</text>
+        <text style="text-decoration:line-through" class="post-distribution">配送费 ￥{{date.DELIVER_FEE}}</text>
+        <text class="post-sale">月销{{date.MONTH_SALE}}{{date.GOODS_FEE_UNIT}}</text>
+    </view>
+    <view class="goodsDetail">
+        <image style="width:750rpx;height:80rpx;" src="/resources/detailImg.png"></image>
+        <text class="content">品牌名称：{{date.GOODS_TYPE_LEVEL1_NAME}}</text>
+        <text class="content">商品名称：{{date.GOODS_NAME}}</text>
+        <text class="content">商品分类：{{date.GOODS_TYPE_LEVEL2_NAME}}</text>
+        <text class="content">产地：{{date.MADE_ADDRESS}}</text>
+        <text style="margin-bottom:20rpx;" class="content">商品编号：{{date.GOODS_ID}}</text>
+    </view>
+    <view class="goodsImg" wx:for="{{date.GOODS_BASE_INFO.GOODS_DETAIL}}">
+        <image src="{{item}}"></image>
+    </view>    
+</view>

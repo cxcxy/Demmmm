@@ -1,0 +1,29 @@
+<view>
+    <image style="height:200px;width:100%;" src="../../resources/cars_img.jpg"></image>
+</view>
+<view>
+    <view class="content">
+        <image class="userTitle" src="../../resources/userTitle.jpg"></image>
+        <view class="text">
+            <view class="big_m">
+                <text>￥</text>
+                <text>238</text>
+            </view>
+            <view>
+                 <text>商品编号:</text>
+                <text>836127</text>
+            </view>
+        </view>
+    </view>
+    <view class="specifications">
+        <view class="colorTitle">颜色</view>
+        <view class="color" style="border:{{borderSzie}}px solid {{borderColor}};" bindtap="clickColor">白色</view>
+        <view class="colorTitle">尺码</view>
+        <view>
+            <view class="color">175/96A</view>
+            <view class="color">180/100A</view>
+            <view class="color">185/104A</view>
+        </view>
+    </view>
+</view>
+<button bindtap="ok" class="btn">确定</button>

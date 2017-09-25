@@ -1,0 +1,56 @@
+<view>
+    <text wx:if="{{!ADDRESS}}">选中地址</text>
+    <view bindtap="goChooseAddress">
+        <text wx:if="{{ADDRESS}}">
+            {{ADDRESS.CONSIGNEE}}/{{ADDRESS.MOBILE}}
+        </text>
+        <text wx:if="{{ADDRESS}}">
+            {{ADDRESS.REGION_PROVINCE}}
+            {{ADDRESS.REGION_COUNTRY}}
+            {{ADDRESS.REGION_CITY}}
+            {{ADDRESS.ADDRESS}}
+        </text>
+    </view>
+</view>
+<view wx:for="{{BRAND_ARR}}" wx:for-item="brand_cart" wx:for-index="idx" class="carts-item"  bindtap="bindViewTap">
+    <!-- 全选 -->
+    <view class="my-sel" >
+        <text>{{brand_cart.brand}}</text>
+    </view>
+
+    <view class="my-list bordernone" wx:for="{{BRAND_CART[brand_cart.brand]}}" wx:for-item="cartItem" >
+        <image src="{{cartItem.GOODS_IMG_URL}}" class="my-pic" mode="aspectFill"></image>
+        <view class="my-left">
+            <view class="my-title">{{cartItem.GOODS_NAME}}</view>
+            <text class="my-txt">颜色：{{cartItem.GOODS_COLOR}} 尺码：{{cartItem.GOODS_SIZE}}</text>
+        </view>
+        <view class="my-right">
+            <icon class="iconfont del"/>
+            <text class="gay">￥{{cartItem.GOODS_PRICE}}</text>
+        </view>
+    </view>
+</view>
+
+<view>
+    <view>
+        <text>订单金额</text>
+        <text>￥{{TOTAL_PRICE}}</text>
+    </view>
+    <view>
+        <text>配送费</text>
+        <text>￥{{EXPRESS_CHARGES}}</text>
+    </view>
+    <view>
+        <text>手机折扣</text>
+        <text>￥{{ORDER_DISCOUNT_REMARK}}</text>
+    </view>
+    <view>
+        <text>需支付</text>
+        <text>￥{{NEED_PAY_PRICE}}</text>
+    </view>
+</view>
+<!--底部-->
+<view class="float">
+    <button type="primary" size="default" loading="true" plain="false"
+        disabled="false" bindtap="primary"> 去支付 </button>
+</view>

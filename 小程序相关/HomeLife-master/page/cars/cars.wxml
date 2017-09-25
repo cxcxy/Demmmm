@@ -1,0 +1,40 @@
+<view wx:for="{{BRAND_ARR}}" wx:for-item="brand_cart" wx:for-index="idx" class="carts-item"  bindtap="bindViewTap">
+    <!-- 全选 -->
+    <view class="my-sel" >
+        <icon data-brand="{{brand_cart.brand}}" bindtap="bindSelectAll" type="{{brand_cart.selected?'success_circle':'circle'}}" data-index="{{idx}}" size="20" class="l-mycheck"/>
+        <text>{{brand_cart.brand}}</text>
+    </view>
+
+    <view class="my-list bordernone" wx:for="{{BRAND_CART[brand_cart.brand]}}" wx:for-item="cartItem" >
+        <icon data-brand="{{brand_cart.brand}}"  type="{{cartItem.selected?'success_circle':'circle'}}" size="20" bindtap="bindCheckbox" data-index="{{index}}" class="my-check"/>
+        <image src="{{cartItem.GOODS_IMG_URL}}" class="my-pic" mode="aspectFill"></image>
+        <view class="my-left">
+            <view class="my-title">{{cartItem.GOODS_NAME}}</view>
+            <text class="my-txt">颜色：{{cartItem.GOODS_COLOR}} 尺码：{{cartItem.GOODS_SIZE}}</text>
+            <view class="my-bnt">
+                <!-- 减号 -->
+                <text class="{{minusStatuses[index]}} bnt" data-index="{{index}}" bindtap="bindMinus">-</text>
+                <!-- 数值 -->
+                <input type="number" bindchange="bindManual" class="int" value="{{cartItem.GOODS_NUM}}" />
+                <!-- 加号 -->
+                <text class="normal bnt" data-index="{{index}}" bindtap="bindPlus">+</text>
+            </view>
+        </view>
+        <view class="my-right">
+            <icon class="iconfont del"/>
+            <text class="gay">￥{{cartItem.GOODS_PRICE}}</text>
+        </view>
+    </view>
+</view>
+
+<!--底部-->
+<view class="float">
+    <view class="my-rightbox">
+        <view class="my-count" data='{{sep}}'>
+            您需要支付：<text style="color:red">￥{{TOTAL_PRICE}}</text>
+        </view>
+        <view class="my-bnts" bindtap="setPayment" >
+            立即购买
+        </view>
+    </view>
+</view>

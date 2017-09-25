@@ -1,0 +1,6 @@
+framework module Pods_ChangeImage {
+  umbrella header "Pods-ChangeImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

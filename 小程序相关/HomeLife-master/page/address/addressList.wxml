@@ -1,0 +1,12 @@
+<view wx:for="{{ADDRESS_LIST}}" wx:for-item="item" bindtap="chooseAddressToOrder" data-index="{{index}}">
+    <text>
+    {{item.CONSIGNEE}}/{{item.MOBILE}}
+    {{item.REGION_PROVINCE}}
+    {{item.REGION_CITY}}
+    {{item.REGION_COUNTRY}}
+    {{item.ADDRESS}}
+    </text>
+</view>
+<view>
+    <button type="default" bindtap="addAddress" hover-class="other-button-hover"> 新增地址 </button>
+</view>
